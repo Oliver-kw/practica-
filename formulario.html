@@ -13,7 +13,7 @@
 
 <form id="Miformulario" action="https://formspree.io/f/mreybgya" method="post">
     <label>Nombre</label>
-    <input name="Nombre"  type="text" id="Nombre" required placeholder="Nombre mmg">
+    <input name="Nombre"  type="text" id="Nombre" required placeholder="Nombre">
     <br>
 
     <label>Apellido</label>
@@ -34,10 +34,10 @@
 
     <label>En que te ayudamos?</label>
     <br>
-    <textarea name="Comentario" id="Comentario" cols="30" rows="10" placeholder="En que te ayudo mmg?"></textarea>
+    <textarea name="Comentario" id="Comentario" cols="30" rows="10"></textarea>
     <br>
 
-    
+   <div class="g-recaptcha" data-sitekey="6LdfQYMsAAAAAD5weY-TzWtdW8METKbbHJBkXDZT"></div>
 
     <button type="submit" onclick="validar()">Registrar</button>
 </form>
@@ -45,6 +45,7 @@
 <p id="mensaje"></p>
 
 <script src="app.js"></script>
+<script src="https://www.google.com/recaptcha/api.js"></script>
 
 </body>
 </html>
