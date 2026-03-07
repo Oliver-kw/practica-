@@ -5,36 +5,15 @@ function validar(){
     let di = document.getElementById("Direccion");
     let co = document.getElementById("Correo");
     let tel = document.getElementById("Telefono");
+    let mensaje = document.getElementById("mensaje");
+    let coment = document.getElementById("Comentario");
 
-    if(nombre.value === ""){
-        alert("Debe llenar el campo Nombre");
-        nombre.focus();
-        return;
+    if(nombre.value === "" || ape.value ==="" || di.value==="" || co.value === "" || tel.value === "" || coment.value === ""){
+        mensaje.textContent = "Por favor llenar todos los campos";
+        mensaje.className = "Error";
+    }else{
+        mensaje.textContent = "Formulario llenado correctamente";
+        mensaje.className = "Correcto";
     }
 
-    if(ape.value === ""){
-        alert("Debe llenar el campo Apellido");
-        ape.focus();
-        return;
-    }
-
-    if(di.value === ""){
-        alert("Debe llenar el campo Dirección");
-        di.focus();
-        return;
-    }
-
-    if(co.value === ""){
-        alert("Debe llenar el campo Correo");
-        co.focus();
-        return;
-    }
-
-    if(tel.value === ""){
-        alert("Debe llenar el campo Teléfono");
-        tel.focus();
-        return;
-    }
-
-    alert("Formulario enviado correctamente");
 }

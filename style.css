@@ -1,6 +1,7 @@
 body {
+    background-color: black;
     font-family: Arial;
-    background-color: lightgray;
+    color: lightgray;
     text-align: center;
 
 }
@@ -10,7 +11,7 @@ h1 {
 
 }
 h2 {
-    color: black;
+    color: lightgray;
 
 }
 
@@ -20,4 +21,24 @@ color: blue;
 }
 a:hover {
     color: red;
+}
+
+#mensaje{
+    font-weight: bold;
+    margin-top: 10px;
+}
+.Error{
+    color: red;
+}
+.Correcto{
+    color: green;
+}
+
+#Miformulario{
+    width: 100%;
+    background-color: black;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+
 }

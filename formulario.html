@@ -1,46 +1,48 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <title>Formulario 2.0</title>
-    <style>
-        body{
-            background-color: rgb(164, 159, 159);
-            background-image: url(1.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-    </style>
+    
 </head>
 
 <body>
 
 <h2>Formulario 2.0</h2>
 
-<form>
+<form id="Miformulario" action="https://formspree.io/f/mreybgya" method="post">
     <label>Nombre</label>
-    <input type="text" id="Nombre">
+    <input name="Nombre"  type="text" id="Nombre" required placeholder="Nombre mmg">
     <br>
 
     <label>Apellido</label>
-    <input type="text" id="Apellido">
+    <input name="Apellido"  type="text" id="Apellido" required placeholder="Apellido">
     <br>
 
     <label>Direccion</label>
-    <input type="text" id="Direccion">
+    <input name="Direccion" type="text" id="Direccion" required placeholder="Direccion">
     <br>
 
     <label>Correo</label>
-    <input type="text" id="Correo">
+    <input name="Correo" type="email" id="Correo" required placeholder="Correo">
     <br>
 
     <label>Telefono</label>
-    <input type="text" id="Telefono">
+    <input name="Telefono" type="text" id="Telefono" required placeholder="Numero">
     <br>
 
-    <button type="button" onclick="validar()">Registrar</button>
+    <label>En que te ayudamos?</label>
+    <br>
+    <textarea name="Comentario" id="Comentario" cols="30" rows="10" placeholder="En que te ayudo mmg?"></textarea>
+    <br>
+
+    
+
+    <button type="submit" onclick="validar()">Registrar</button>
 </form>
+
+<p id="mensaje"></p>
 
 <script src="app.js"></script>
 
