@@ -1,0 +1,23 @@
+body {
+    font-family: Arial;
+    background-color: lightgray;
+    text-align: center;
+
+}
+
+h1 {
+    color: darkblue;
+
+}
+h2 {
+    color: black;
+
+}
+
+a {
+text-decoration: none;
+color: blue;
+}
+a:hover {
+    color: red;
+}
